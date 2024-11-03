@@ -1,0 +1,21 @@
+#include<stdio.h>
+void main(){
+int unit_consumed, surcharge;
+float amount;
+scanf("%d",&unit_consumed);
+  if(unit_consumed<=199){
+    amount=unit_consumed*1.20;}
+  else if(unit_consumed>=200&&unit_consumed<400){
+    amount=unit_consumed*1.50;}
+  else if(unit_consumed>=400&&unit_consumed<=600){
+    amount=unit_consumed*1.80;}
+  else{
+    amount=unit_consumed*2.00;}
+  printf("%.2f\n", amount);
+  if(amount>400){
+    surcharge=amount*0.15;}
+  else{
+    surcharge=0;)}
+  printf("%f", surcharge+amount);
+  }
+    
